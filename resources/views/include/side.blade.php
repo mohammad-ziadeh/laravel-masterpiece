@@ -21,8 +21,6 @@
         </li>
         <li class="nav-item">
 
-        <li class="nav-item"> <a class="nav-link" href="/tables" style="color: #eeeeee"> Login </a>
-        </li>
 
 
         </li>

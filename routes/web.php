@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,6 @@ Route::get('/', function () {
 Route::get('/charts', function () {
     return view('layout.charts');
 });
-Route::get('/tables', function () {
-    return view('layout.tables');
-});
+Route::get('/tables', [UserController::class, 'index'])->name('tables.index');
+
+Route::resource('users', UserController::class);
