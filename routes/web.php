@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.mainBody');
+});
+Route::get('/charts', function () {
+    return view('layout.charts');
+});
+Route::get('/tables', function () {
+    return view('layout.tables');
 });
